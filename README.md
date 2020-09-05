@@ -31,7 +31,7 @@ First Tab:
 $ firebase login
 $ firebase init
 ```
-select come down with arrow keys to *Hosting: Configure and deploy Firebase Hosting* and press *spacebar* and *enter* then select the existing project and you get the option *What do you want to use as your public directory? (public)* just type *build* and after that y for the question.
+select with arrow keys to *Hosting: Configure and deploy Firebase Hosting* and press *spacebar* and *enter* then select the existing project and you get the option *What do you want to use as your public directory? (public)* just type *build* and after that y for the question.
 ```sh
 $ npm run build
 $ firebase deploy
