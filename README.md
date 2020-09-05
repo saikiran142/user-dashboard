@@ -14,13 +14,14 @@ Clone the project and then
 ```sh
 $ cd user-dashboard
 $ npm install
-$ localhost:3000
 ```
 
 To run Locally 
 
 ```sh
 $ npm start
+$ localhost:3000
+
 ```
 
 ### Deploy in Firebase
