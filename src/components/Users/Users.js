@@ -96,11 +96,11 @@ function Users() {
                     <TableBody>
                     {usersList.map((user) => (
                         <TableRow key={user.id}>
-                        <TableCell component="th" scope="row">
+                        <TableCell component="th" scope="row" onClick={()=> handleClickOpen(user.id)} style={{cursor: 'pointer'}}>
                             {user.realName}
                         </TableCell>
-                        <TableCell>{user.email}</TableCell>
-                        <TableCell align="right" onClick={()=> handleClickOpen(user.id)}><VisibilityIcon style={{fill: "#292826"}}></VisibilityIcon></TableCell>
+                        <TableCell onClick={()=> handleClickOpen(user.id)} style={{cursor: 'pointer'}}>{user.email}</TableCell>
+                        <TableCell align="right" onClick={()=> handleClickOpen(user.id)} onClick={()=> handleClickOpen(user.id)} style={{cursor: 'pointer'}}><VisibilityIcon style={{fill: "#292826"}}></VisibilityIcon></TableCell>
                         <TableCell align="right" 
                         // onClick={()=> deleteUser(user.id)}
                         ><DeleteIcon  style={{fill: "#292826"}}></DeleteIcon></TableCell>
@@ -198,7 +198,7 @@ function Users() {
             {/* Modal Which Opens on Click of View Activities */}
 
             {/* Modal Title */}
-            <DialogTitle id="alert-dialog-title">{'User Activities'}
+            <DialogTitle id="alert-dialog-title">{'User Active Time'}
             <div style={{padding:'20px', paddingLeft: '0px', paddingBottom: '0px'}}>
                 <form noValidate>
                         <TextField
